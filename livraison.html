@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="header_content">
+      <div class="header_bg"></div>
+      <a href="index.html" class="logo_figact">Figact.</a>
+      <div class="background_burger">
+        <div class="burger_menu">
+          <div class="burger"></div>  
+        </div>    
+      </div>
+      <nav>
+        <ul>
+          <li><a href="liste.html">Nos produits</a></li>
+          <li><a href="">Qui sommes-nous?</a></li>
+          <li><a href="">Nos actualités</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <!--
+      <div class="account">
+        <a href="">Se connecter</a>
+        <p>ou</p>
+        <a href="">Créer un compte</a>
+      </div>
+      -->
+      <a href="panier.html" class="shopping_cart"><p class="name_shopping_cart">Panier</p> <p>(0)</p> <img src="img-layout/shopping_cart.png" alt=""> </a>
+
+    </div>
+  </header>
+  <main>
+    <div class="delivery">
+    <div class="steps">
+      <h2>Livraison</h2>
+      <span>
+        <strong>ETAPE 1:</strong>Livraison > ETAPE 2: Paiement > ETAPE 3: Confirmation
+      </span>
+    </div>
+    <div class="liv">
+      <h2>séléctionnez votre moyen de livraison</h2>
+    </div>
+    <section class="livraison">
+      <div class="livraison_options">
+        <div class="input_check">
+          <input type="checkbox" value="1" id="checkboxInput">
+          <label for="checkboxInput"></label>
+        </div>
+        <span>livraison standard</span>
+        <div class="tarifs_nfo">
+          <p>2-4 jours ouvrés</p>
+          <p>5.95€</p>
+        </div>
+      </div>
+      <div class="livraison_options">
+        <div class="input_check">
+          <input type="checkbox" value="1" id="checkboxInput2">
+          <label for="checkboxInput2"></label>
+        </div>
+        <span>livraison express</span>
+        <div class="tarifs_nfo">
+          <p>1-2 jours ouvrés</p>
+          <p>9.95€</p>
+        </div>
+      </div>
+      <div class="livraison_options">
+        <div class="input_check">
+          <input type="checkbox" value="1" id="checkboxInput3">
+          <label for="checkboxInput3"></label>
+        </div>
+        <span>livraison relais colis</span>
+        <div class="tarifs_nfo">
+          <p>2-5 jours ouvrés</p>
+          <p>3.95€</p>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="your_order">
+        <h2>votre commande</h2>
+      </div>
+      <div class="order_list">
+        <ul>
+          <li>
+            <img src="http://www.mangeeka.com/uploads/actu/2016/juillet/131df139bb01f058426cb342db797ce71469698422_full.jpg" alt="">
+            <div class="order_single">
+              <span>Saitama: One Punch Man</span>
+              <span>Quantité: 1</span>
+              <span>Prix: 99.90€</span>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.mangeeka.com/uploads/actu/2016/juillet/131df139bb01f058426cb342db797ce71469698422_full.jpg" alt="">
+            <div class="order_single">
+              <span>Solid Snake MGS3</span>
+              <span>Quantité: 1</span>
+              <span>Prix: 38.45€</span>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.mangeeka.com/uploads/actu/2016/juillet/131df139bb01f058426cb342db797ce71469698422_full.jpg" alt="">
+            <div class="order_single">
+              <span>Deadpool Deadpool</span>
+              <span>Quantité: 1</span>
+              <span>Prix: 49.95€</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="order_price">
+        <table>
+          <tr>
+            <th>Détails</th>
+            <th>Montant</th>
+          </tr>
+          <tr>
+            <td>Sous-total</td>
+            <td>188.30€</td>
+          </tr>
+          <tr>
+            <td>Livraison standard</td>
+            <td>5.95€</td>
+          </tr>
+          <tr>
+            <td class="trait"></td>
+            <td class="trait"></td>
+          </tr>
+          <tr>
+            <td>Commande (TTC)</td>
+            <td>207.56€</td>
+          </tr>
+          <tr>
+            <td>(Dont TVA)</td>
+            <td>19.26€</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="order_info">
+      <div class="adress">
+        <h2>adresse de livraison</h2>
+      </div>
+      <div class="input_liv">
+        <label for="adresse mail *">adresse mail *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="confirmer l'adresse">confirmer l'adresse mail *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="sexe">sexe *</label>
+        <select name="sexe" required>
+            <option value="femme" selected="">Femme</option>
+            <option value="homme">Homme</option>
+        </select>
+      </div>
+      <div class="input_liv">
+        <label for="prénom">prénom *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="nom">nom *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="adrssse">adresse *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="code postale">code postale *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="ville">ville *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="pays">pays *</label>
+        <input type="text" required>
+      </div>
+      <div class="input_liv">
+        <label for="téléphone portable *">téléphone portable *</label>
+        <input type="text" required>
+      </div>
+      <div class="fields_info">
+        <span>* = Obligatoire</span>
+      </div>
+      <div class="submit">
+        <input type="submit" class="submit_process" name="" value="procéder au paiement">
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer>
+    
+    <div class="footer_content">
+      <h4>Recevez notre newsletter</h4>
+      <form class="newsletter">
+        <input class="email" type="email" name="email" placeholder="françois.dupont@gmail.com">
+        <input class="submit" type="submit" name="submit" value="ok">
+      </form>
+      <nav class="main_nav">  
+        <ul>
+          <li>Contact</li>
+          <li>Suivez-nous: 
+            <a href="" class="social_network"><img src="img-layout/logo_facebook.svg" alt=""></a>
+            <a href="" class="social_network"><img src="img-layout/logo_twitter.svg" alt=""></a>
+          </li>
+          <li>Suivez-nous:</li> 
+          <li>
+            <a href="" class="social_network"><img src="img-layout/logo_facebook.svg" alt=""></a>
+            <a href="" class="social_network"><img src="img-layout/logo_twitter.svg" alt=""></a>
+          </li>
+          <li><a href="#">Portail admin</a></li>
+        </ul>
+      </nav>
+      <span class="line"></span>
+      <nav class="rights">  
+        <ul>
+          <li><span class="copyright">Copyright</span> ©2017 UREBEN</li>
+          <li class="dash"> - </li>
+          <li><a href="#">Mentions légales</a></li> 
+          <li><a href="#">By Nineteen, Digital Hetic Agency</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+  </footer>
+</body>
+</html>
+
+<script src="script/script.js"></script>

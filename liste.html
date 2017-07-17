@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Figact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<header>
+		<div class="header_content">
+			<div class="header_bg"></div>
+			<a href="index.html" class="logo_figact">Figact.</a>
+			<div class="background_burger">
+				<div class="burger_menu">
+				  <div class="burger"></div>  
+				</div>		
+			</div>
+			<nav>
+				<ul>
+					<li><a href="liste.html" class="active">Nos produits</a></li>
+					<li><a href="">Qui sommes-nous?</a></li>
+					<li><a href="">Nos actualités</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<!--
+			<div class="account">
+				<a href="">Se connecter</a>
+				<p>ou</p>
+				<a href="">Créer un compte</a>
+			</div>
+			-->
+			<a href="panier.html" class="shopping_cart"><p class="name_shopping_cart">Panier</p> <p>(0)</p> <img src="img-layout/shopping_cart.png" alt=""> </a>
+
+		</div>
+	</header>
+	<main>
+		<div class="list">
+			
+			<div class="header_list">
+				
+				<div class="order">
+					<label>Trier par:</label>
+					<form>
+						<select>
+							<option>Date d'ajouts</option>
+							<option>Prix croissants</option>
+							<option>Prix décroissants</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="search">
+					<input type="text" name="search" placeholder="Rechercher un article">
+					<button><img src="img-layout/search.svg" alt=""></button>
+				</div>
+
+			</div>
+
+			<div class="list_content">
+
+				<h2>Nos derniers produits ajoutées.</h2>
+
+				<section class="section_list">
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_deadpool_deadpool.png" alt="">
+						<h3>Deadpool</h3>
+						<span>49.95 €</span>
+					</a>
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_samus.png" alt="">
+						<h3>Samus</h3>
+						<span>35.884 €</span>
+					</a>
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_portal.png" alt="">
+						<h3>Portal</h3>
+						<span>65.00 €</span>
+					</a>
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_portal2.png" alt="">
+						<h3>Portal</h3>
+						<span>55.80 €</span>
+					</a>
+
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_idk.png" alt="">
+						<h3>IDK</h3>
+						<span>46.95 €</span>
+					</a>
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_link.png" alt="">
+						<h3>Link</h3>
+						<span>80.90 €</span>
+					</a>
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_ironman.png" alt="">
+						<h3>Iron Man</h3>
+						<span>67.95 €</span>
+					</a>
+					<a href="article.html" class="list_item">
+						<img src="img-content/figure_deadpool_deadpool.png" alt="">
+						<h3>Deadpool</h3>
+						<span>49.95 €</span>
+					</a>	
+
+					<div class="pagination">
+						<span class="result_pages">Résultat 1-8 sur 12</span>
+						<div class="button_pages">
+							<button><img src="img-layout/arrowicon.png" alt=""><span>Précédent</span></button>
+							<button>1</button>
+							<button>2</button>
+							<button>3</button>
+							<button>4</button>
+							<button>...</button>
+							<button>12</button>
+							<button><img src="img-layout/arrowicon.png" alt=""><span>Suivant</span></button>
+						</div>
+					</div>
+					
+				</section>
+			</div>
+		</div>
+	</main>
+	<footer>
+		
+		<div class="footer_content">
+			<h4>Recevez notre newsletter</h4>
+			<form class="newsletter">
+				<input class="email" type="email" name="email" placeholder="françois.dupont@gmail.com">
+				<input class="submit" type="submit" name="submit" value="ok">
+			</form>
+			<nav class="main_nav">	
+				<ul>
+					<li>Contact</li>
+					<li>Suivez-nous: 
+						<a href="" class="social_network"><img src="img-layout/logo_facebook.svg" alt=""></a>
+						<a href="" class="social_network"><img src="img-layout/logo_twitter.svg" alt=""></a>
+					</li>
+					<li>Suivez-nous:</li>	
+					<li>
+						<a href="" class="social_network"><img src="img-layout/logo_facebook.svg" alt=""></a>
+						<a href="" class="social_network"><img src="img-layout/logo_twitter.svg" alt=""></a>
+					</li>
+					<li><a href="#">Portail admin</a></li>
+				</ul>
+			</nav>
+			<span class="line"></span>
+			<nav class="rights">	
+				<ul>
+					<li><span class="copyright">Copyright</span> ©2017 UREBEN</li>
+					<li class="dash"> - </li>
+					<li><a href="#">Mentions légales</a></li>	
+					<li><a href="#">By Nineteen, Digital Hetic Agency</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+	</footer>
+</body>
+</html>
+
+<script src="script/script.js"></script>

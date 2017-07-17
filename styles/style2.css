@@ -1,0 +1,341 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after
+{
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after
+{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+/*		Font		*/
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../font/ProximaNova-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../font/ProximaNova-Semibold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url("../font/ProximaNova-Bold.woff") format('woff');
+}
+
+html, body
+{
+	height: 100%;
+}
+
+/*		Header		*/
+
+
+/*
+	Burger-menu
+	Author: ;
+
+*/
+
+.burger_menu {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.burger {
+    position: absolute;
+    background: #ce2d4f;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.burger::before {
+    position: absolute;
+    background: #ce2d4f;
+    width: 30px;
+    height: 5px;
+    top: 11px;
+    content: "";
+    display: block;
+    border-radius: 5px;
+}
+
+.burger::after {
+  position: absolute;
+  background: #ce2d4f;
+  width: 30px;
+  height: 5px;
+  bottom: 11px;
+  content: "";
+  display: block;
+  border-radius: 5px;
+}
+
+.burger::after, .burger::before, .burger {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.burger_menu.menu_on .burger::after{
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+
+.burger_menu.menu_on .burger::before{
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+
+.burger_menu.menu_on .burger
+{
+	background: rgba(111,111,111,.0);
+}
+
+/*  */
+.burger_menu 
+{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.background_burger
+{
+	z-index: 2;
+	width: 18%;
+	order: 1;
+}
+
+.header_content
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1% 0;
+	position: relative;
+}
+
+header
+{
+	transition: 2s;
+	height: initial;
+	height: 10%;
+}
+
+.header_bg
+{
+	background: #fff;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+
+
+.logo_figact 
+{
+	width: 68%;
+	z-index: 3;
+	font-family: "ProximaNova-Semibold";
+	font-size: 30px;
+	color: #3e000c;
+	text-decoration: none;
+	order: 2;
+	text-align: center;
+	padding: 2vh 0;
+}
+
+.header_content nav
+{
+	width: 100%;
+	z-index: 3;
+	position: absolute; 
+	top: -800px;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 1;
+	transition: 2s;
+}
+
+.header_content nav ul
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.header_content nav ul li
+{
+	flex: 1;
+	text-align: center;
+	list-style: none;
+	padding: 8vh 0;
+	padding-top: 5px;
+}
+
+.header_content nav ul li a
+{
+	font-size: 25px;
+	font-family: "ProximaNova-Regular";
+	text-decoration: none;
+	color: #3e000c;
+}
+
+.header_content nav ul li a:hover, .active
+{
+	font-family: "ProximaNova-Semibold" !important;
+	text-decoration: underline !important;
+}
+
+.account
+{
+	z-index: 3;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    align-items: center;
+    font-family: "ProximaNova-Regular";
+    color: #3e000c;
+    margin-left: auto;
+}
+
+.account a
+{
+	color: #ce2d4f;
+}
+
+
+.name_shopping_cart
+{
+	display: none;
+}
+
+.shopping_cart
+{
+	width: 18%;
+	display: flex;
+	text-decoration: none;
+	margin-left: auto;
+	z-index: 3;
+	order: 3;
+}
+
+.shopping_cart p
+{
+	padding-top: 5px;
+	font-family: "ProximaNova-Regular";
+}
+
+.shopping_cart *
+{
+	margin: auto;
+	color: #ce2d4f;
+}
+
+.name_shopping_cart
+{
+
+	font-weight: bold;
+}
+
+.background_header
+{
+	background: #fff;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+@media screen and (min-width : 768px)
+{
+	.background_burger
+	{
+		display: none;
+	}	
+	
+	.logo_figact 
+	{
+		width: 10%;
+	}
+
+	.logo_figact, .shopping_cart
+	{
+		order: initial;
+	}
+
+	.header_content nav
+	{
+		width: 75%;
+		position: initial;
+		z-index: 3;
+
+	}
+	
+	.header_content nav ul
+	{
+		flex-direction: row;
+	}
+
+	.header_content nav ul li a
+	{
+		font-size: 15px;
+	}
+	
+		.name_shopping_cart
+	{
+		display: block;
+	}
+
+	.shopping_cart
+	{
+		width: 15%;
+	}
+
+	.button_pages
+	{
+		width: 55%;
+	}
+
+	.cart_category *, .cart_item * 
+	{
+	    width: 18%;
+	}
+
+	.total_cart
+	{
+		width: 60%;
+	}
+
+	.newsletter
+	{
+		width: 50%;
+	}
+}
